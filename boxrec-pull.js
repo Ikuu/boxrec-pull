@@ -20,7 +20,8 @@ function extractInfo(data) {
 module.exports = {
   findById: function(id, cb) {
     request('http://boxrec.com/boxer/' + id, function(err, response, body) {
-      cb(extractInfo(body));
+      if (typeof id !== 'number') return cb(true);
+      return cb(null, extractInfo(body));
     });
   },
 
@@ -30,7 +31,7 @@ module.exports = {
       var id = $('cite').first().text().slice(17);
 
       request('http://boxrec.com/boxer/' + id, function(err, response, body) {
-        cb(extractInfo(body));
+        return cb(null, extractInfo(body));
       });
     });
   }
