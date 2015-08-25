@@ -1,5 +1,5 @@
 var should = require('chai').should();
-var boxrec = require('../boxrec-pull');
+var boxrec = require('../src/index.js');
 
 describe("findById", function() {
   it("should return Gennady Golovkin", function(done) {
