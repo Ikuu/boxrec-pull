@@ -1,5 +1,6 @@
 # Boxrec-Pull
 Allows for information about a boxer to be pulled from the online boxing database, Boxrec.
+
 [![NPM version](https://badge.fury.io/js/boxrec-pull.svg)](http://badge.fury.io/js/boxrec-pull)
 
 
@@ -16,7 +17,7 @@ boxrec.findById(356831, function(err, boxer) {
   console.log(boxer.name); // 'Gennady Golovkin'
 });
 
-`boxrec.findByName('Carl Froch', function(err, boxer) {
+boxrec.findByName('Carl Froch', function(err, boxer) {
   console.log(boxer.nickname); 'The Cobra'
 });
 ```
