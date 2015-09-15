@@ -1,6 +1,6 @@
 {
   "name": "boxrec-pull",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pulls information about a specifc boxer from Boxrec.",
   "main": "src/index.js",
   "repository": {
