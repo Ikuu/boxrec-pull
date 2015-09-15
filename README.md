@@ -18,7 +18,7 @@ boxrec.findById(356831, function(err, boxer) {
 });
 
 boxrec.findByName('Carl Froch', function(err, boxer) {
-  console.log(boxer.nickname); 'The Cobra'
+  console.log(boxer.nickname); // 'The Cobra'
 });
 ```
 ## Notes
